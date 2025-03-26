@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Ambev.GestaoFuncionarios.Application\Ambev.GestaoFuncionarios.Application\Ambev.GestaoFuncionarios.Application.csproj" />
+    <ProjectReference Include="..\..\Ambev.GestaoFuncionarios.Common\Ambev.GestaoFuncionarios.Common\Ambev.GestaoFuncionarios.Common.csproj" />
+    <ProjectReference Include="..\..\Ambev.GestaoFuncionarios.Domain\Ambev.GestaoFuncionarios.Domain\Ambev.GestaoFuncionarios.Domain.csproj" />
+    <ProjectReference Include="..\..\Ambev.GestaoFuncionarios.ORM\Ambev.GestaoFuncionarios.ORM\Ambev.GestaoFuncionarios.ORM.csproj" />
+  </ItemGroup>
+
+</Project>

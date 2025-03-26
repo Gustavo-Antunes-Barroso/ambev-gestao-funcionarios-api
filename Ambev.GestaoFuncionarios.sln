@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{AC604A9F-2719-4137-8D90-B20DCFACFE52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Driven", "Driven", "{67875225-5589-45FD-A461-AC86F0446933}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Drivers", "Drivers", "{FDD30C41-6523-47B0-B865-2CD2F32168A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{542335F6-6446-48F1-B959-DE7C1173D899}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aplication", "Aplication", "{696C72D7-652E-40BC-8242-6F26548BB051}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{60213BD3-C36B-4C4A-B4B8-96BD7893F8AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Crosscutting", "Crosscutting", "{C37C1956-84F2-439B-B8F3-C353C77DE6D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8D3421B3-91F5-4216-AC30-806CB6486EE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{8AC032D2-DCF3-4572-AE7C-2086280A662C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{2FCC0380-3CAE-4F0D-9768-159FF073914C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambev.GestaoFuncionarios.ORM", "src\Ambev.GestaoFuncionarios.ORM\Ambev.GestaoFuncionarios.ORM\Ambev.GestaoFuncionarios.ORM.csproj", "{F76FEA05-B277-4B64-A139-E3ACCAC894AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambev.GestaoFuncionarios.WebApi", "src\Ambev.GestaoFuncionarios.WebApi\Ambev.GestaoFuncionarios.WebApi\Ambev.GestaoFuncionarios.WebApi.csproj", "{E6514BCB-C28D-48AA-9C6A-F73E0B7F4FAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambev.GestaoFuncionarios.Application", "src\Ambev.GestaoFuncionarios.Application\Ambev.GestaoFuncionarios.Application\Ambev.GestaoFuncionarios.Application.csproj", "{BA8AAAE2-08E0-4091-9D11-A563813CDB44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambev.GestaoFuncionarios.Domain", "src\Ambev.GestaoFuncionarios.Domain\Ambev.GestaoFuncionarios.Domain\Ambev.GestaoFuncionarios.Domain.csproj", "{836E8341-42C2-402D-A2FE-831B6B030EFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambev.GestaoFuncionarios.Ioc", "src\Ambev.GestaoFuncionarios.Ioc\Ambev.GestaoFuncionarios.Ioc\Ambev.GestaoFuncionarios.Ioc.csproj", "{AF031474-E9A9-414C-8D3B-A19A5A0B60B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambev.GestaoFuncionarios.Common", "src\Ambev.GestaoFuncionarios.Common\Ambev.GestaoFuncionarios.Common\Ambev.GestaoFuncionarios.Common.csproj", "{14966396-9621-48E5-BAAD-0308D1413B23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F76FEA05-B277-4B64-A139-E3ACCAC894AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F76FEA05-B277-4B64-A139-E3ACCAC894AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F76FEA05-B277-4B64-A139-E3ACCAC894AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F76FEA05-B277-4B64-A139-E3ACCAC894AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6514BCB-C28D-48AA-9C6A-F73E0B7F4FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6514BCB-C28D-48AA-9C6A-F73E0B7F4FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6514BCB-C28D-48AA-9C6A-F73E0B7F4FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6514BCB-C28D-48AA-9C6A-F73E0B7F4FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA8AAAE2-08E0-4091-9D11-A563813CDB44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA8AAAE2-08E0-4091-9D11-A563813CDB44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA8AAAE2-08E0-4091-9D11-A563813CDB44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA8AAAE2-08E0-4091-9D11-A563813CDB44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{836E8341-42C2-402D-A2FE-831B6B030EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{836E8341-42C2-402D-A2FE-831B6B030EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{836E8341-42C2-402D-A2FE-831B6B030EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{836E8341-42C2-402D-A2FE-831B6B030EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF031474-E9A9-414C-8D3B-A19A5A0B60B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF031474-E9A9-414C-8D3B-A19A5A0B60B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF031474-E9A9-414C-8D3B-A19A5A0B60B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF031474-E9A9-414C-8D3B-A19A5A0B60B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14966396-9621-48E5-BAAD-0308D1413B23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14966396-9621-48E5-BAAD-0308D1413B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14966396-9621-48E5-BAAD-0308D1413B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14966396-9621-48E5-BAAD-0308D1413B23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{67875225-5589-45FD-A461-AC86F0446933} = {AC604A9F-2719-4137-8D90-B20DCFACFE52}
+		{FDD30C41-6523-47B0-B865-2CD2F32168A7} = {AC604A9F-2719-4137-8D90-B20DCFACFE52}
+		{696C72D7-652E-40BC-8242-6F26548BB051} = {542335F6-6446-48F1-B959-DE7C1173D899}
+		{60213BD3-C36B-4C4A-B4B8-96BD7893F8AA} = {542335F6-6446-48F1-B959-DE7C1173D899}
+		{8AC032D2-DCF3-4572-AE7C-2086280A662C} = {67875225-5589-45FD-A461-AC86F0446933}
+		{2FCC0380-3CAE-4F0D-9768-159FF073914C} = {FDD30C41-6523-47B0-B865-2CD2F32168A7}
+		{F76FEA05-B277-4B64-A139-E3ACCAC894AA} = {8AC032D2-DCF3-4572-AE7C-2086280A662C}
+		{E6514BCB-C28D-48AA-9C6A-F73E0B7F4FAD} = {2FCC0380-3CAE-4F0D-9768-159FF073914C}
+		{BA8AAAE2-08E0-4091-9D11-A563813CDB44} = {696C72D7-652E-40BC-8242-6F26548BB051}
+		{836E8341-42C2-402D-A2FE-831B6B030EFD} = {60213BD3-C36B-4C4A-B4B8-96BD7893F8AA}
+		{AF031474-E9A9-414C-8D3B-A19A5A0B60B1} = {C37C1956-84F2-439B-B8F3-C353C77DE6D3}
+		{14966396-9621-48E5-BAAD-0308D1413B23} = {C37C1956-84F2-439B-B8F3-C353C77DE6D3}
+	EndGlobalSection
+EndGlobal

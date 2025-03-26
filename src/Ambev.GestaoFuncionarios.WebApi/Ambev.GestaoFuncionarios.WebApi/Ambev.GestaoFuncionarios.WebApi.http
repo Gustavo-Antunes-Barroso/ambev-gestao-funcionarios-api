@@ -1,0 +1,6 @@
+@Ambev.GestaoFuncionarios.WebApi_HostAddress = http://localhost:5270
+
+GET {{Ambev.GestaoFuncionarios.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
