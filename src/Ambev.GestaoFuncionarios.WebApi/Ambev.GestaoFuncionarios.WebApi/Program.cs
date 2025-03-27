@@ -25,7 +25,6 @@ string? connectionString = builder.Configuration.GetConnectionString("PostgresCo
 DependencyResolver.RegisterDependencies(builder.Services, connectionString);
 
 var app = builder.Build();
-
 app.UseMiddleware<ValidationExceptionMiddleware>();
 app.UseMiddleware<ExceptionMiddleware>();
 
@@ -45,9 +44,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
-app.UseAuthorization();
-
+app.UseMiddleware<TokenValidationMiddleware>();
 app.MapControllers();
 
 app.Run();

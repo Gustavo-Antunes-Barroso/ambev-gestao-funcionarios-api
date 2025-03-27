@@ -14,4 +14,10 @@
     <ProjectReference Include="..\..\Ambev.GestaoFuncionarios.Ioc\Ambev.GestaoFuncionarios.Ioc\Ambev.GestaoFuncionarios.Ioc.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Controllers\Auth\RsaKey.pem">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

@@ -13,5 +13,6 @@ namespace Ambev.GestaoFuncionarios.Domain.Repositories
         Task<bool> EmailExistsAsync(Guid id, string email);
         Task<bool> DocumentExistsAsync(string document);
         Task<bool> DocumentExistsAsync(Guid id, string document);
+        Task<bool> ValidLogin(string email, string password);
     }
 }

@@ -62,5 +62,10 @@ namespace Ambev.GestaoFuncionarios.ORM.Repositories
             string sql = $"{FuncionarioSql.DocumentExists}{FuncionarioSql.AndIdDiferent}";
             return await _context.CreateConnection().QueryFirstOrDefaultAsync<bool>(sql, new { Id = id, Documento = document });
         }
+
+        public async Task<bool> ValidLogin(string email, string password)
+        {
+            return await _context.CreateConnection().QueryFirstOrDefaultAsync<bool>(FuncionarioSql.ValidLogin, new { Email = email, Password = password });
+        }
     }
 }
