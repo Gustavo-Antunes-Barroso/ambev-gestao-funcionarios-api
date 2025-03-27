@@ -25,7 +25,7 @@ namespace Ambev.GestaoFuncionarios.Application.Services.Funcionarios
                 Task.Run(async () => gestorExists =
                                         funcionario.IdGestor != null && funcionario.IdGestor != Guid.Empty ?
                                             (await _funcionarioRepository.GetByIdAsync(funcionario.IdGestor.Value)) != null :
-                                            false)
+                                            true)
             };
 
             Task.WaitAll(tasks);
