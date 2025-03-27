@@ -3,8 +3,8 @@
     public static class FuncionarioSql
     {
         public const string Create = @"
-        INSERT INTO funcionarios (id, nome, sobrenome, documento, email, telefone, nome_gestor, data_nascimento, is_gestor, data_criacao, data_atualizacao, id_gestor)
-        VALUES (@Id, @Nome, @Sobrenome, @Documento, @Email, @Telefone, @NomeGestor, @DataNascimento, @IsGestor, @DataCriacao, @DataAtualizacao, @IdGestor);";
+        INSERT INTO funcionarios (id, nome, sobrenome, documento, email, telefone, nome_gestor, data_nascimento, is_gestor, data_criacao, data_atualizacao, id_gestor, password)
+        VALUES (@Id, @Nome, @Sobrenome, @Documento, @Email, @Telefone, @NomeGestor, @DataNascimento, @IsGestor, @DataCriacao, @DataAtualizacao, @IdGestor, @Senha);";
 
         public const string Update = @"
         UPDATE funcionarios
@@ -17,7 +17,8 @@
             data_nascimento = @DataNascimento,
             is_gestor = @IsGestor,
             data_atualizacao = @DataAtualizacao,
-            id_gestor = @IdGestor
+            id_gestor = @IdGestor,
+            password = @Senha
         WHERE id = @Id";
 
         public const string Delete = @"
@@ -38,7 +39,8 @@
             is_gestor as IsGestor,
             data_criacao as DataCriacao,
             data_atualizacao as DataAtualizacao,
-            id_gestor as IdGestor
+            id_gestor as IdGestor,
+            password as Senha
         FROM funcionarios 
         WHERE id = @Id";
 
@@ -69,6 +71,12 @@
             COUNT(1) 
         FROM funcionarios 
         WHERE documento = @Documento";
+
+        public const string ValidLogin = @"
+        SELECT 
+            COUNT(1) 
+        FROM funcionarios
+        WHERE email = @Email AND password = @Password";
 
         public const string AndIdDiferent = @" AND id <> @Id";
 

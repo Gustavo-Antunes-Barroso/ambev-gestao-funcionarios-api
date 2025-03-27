@@ -1,6 +1,9 @@
 ﻿using Ambev.GestaoFuncionarios.Application.Services.Funcionarios;
+using Ambev.GestaoFuncionarios.Application.Services.Rsa;
 using Ambev.GestaoFuncionarios.Domain.Repositories;
+using Ambev.GestaoFuncionarios.Domain.Services.Auth;
 using Ambev.GestaoFuncionarios.Domain.Services.Funcionarios;
+using Ambev.GestaoFuncionarios.Domain.Services.Rsa;
 using Ambev.GestaoFuncionarios.ORM.Context;
 using Ambev.GestaoFuncionarios.ORM.Repositories;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,6 +22,8 @@ namespace Ambev.GestaoFuncionarios.Ioc
         {
             services.AddScoped<IValidateCreateFuncionarioService, ValidateCreateFuncionarioService>();
             services.AddScoped<IValidateUpdateFuncionarioService, ValidateUpdateFuncionarioService>();
+            services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IRsaService, RsaService>();
         }
 
         private static void InfrastructureModuleInitializer(IServiceCollection services, string? connectionString)
