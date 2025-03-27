@@ -17,9 +17,10 @@ namespace Ambev.GestaoFuncionarios.Application.Funcionarios.Get
         {
             Funcionario? funcionario = await _funcionarioRepository.GetByIdAsync(request.Id);
 
-            if(funcionario is not null)
-                funcionario.Senha = _rsaService.Encrypt(funcionario.Senha);
+            if (funcionario is null)
+                throw new KeyNotFoundException($"Funcionário com id {request.Id} não foi encontrado!");
 
+            funcionario.Senha = _rsaService.Encrypt(funcionario.Senha);
             GetFuncionarioResult result = _mapper.Map<GetFuncionarioResult>(funcionario);
             return result;
         }
