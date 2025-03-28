@@ -16,7 +16,7 @@ Não é necessário configurar a connection string. O banco de dados já está i
 
 ## Testes Unitários
 Para executar os testes unitários, siga os passos abaixo:
-1. Navegue até o diretório dos testes no terminal: `cd <diretorio_dos_testes>` (exemplo: `tests/Projeto.Tests`).
+1. Navegue até o diretório dos testes no terminal: `cd ambev-gestao-funcionarios-api\tests\Ambev.GestaoFuncionarios.UnitTest` (exemplo: `Ambev.GestaoFuncionarios.UnitTest`).
 2. Execute os testes com o comando: `dotnet test`
 
 Os resultados dos testes serão exibidos no terminal, indicando quais testes passaram ou falharam.
